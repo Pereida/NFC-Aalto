@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/dialog_write_title"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/global_text"
+            android:text="@string/action_write_test"
+            android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:layout_below="@id/dialog_write_title"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_gravity="center_horizontal"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                android:maxLength="6"
+                android:hint="@string/content_hint"
+                android:capitalize="characters"
+                android:id="@+id/content_edit"
+                android:textColor="@color/global_text"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <NumberPicker
+                android:layout_toRightOf="@id/content_edit"
+                android:padding="@dimen/buttonpadding"
+                android:id="@+id/page_picker"
+                android:layout_width="wrap_content"
+                android:textColor="@color/global_text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="14dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/current_auth_key"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_write"
+                android:padding="12dp"
+                android:layout_margin="4dp"
+                android:id="@+id/btn_write" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_cancel"
+                android:padding="12dp"
+                android:layout_margin="4dp"
+                android:id="@+id/btn_write_cancel" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_margin="6dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/check_box_write_auth"
+            android:hint="@string/switch_auth_first"
+            android:textColorHint="@color/hint_color"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/current_auth_key"
+            android:layout_below="@id/check_box_write_auth"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint_color"
+            android:text="Key in use: BREAKMEIFYOUCAN!"
+            android:alpha="0" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

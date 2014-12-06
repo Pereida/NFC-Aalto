@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.example.auth.app.fragments.TicketFragment">
+
+    <TextView
+        android:id="@+id/tag_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/hint_color"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/tag_tap_hint"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/row1">
+
+        <TextView
+            android:textColorHint="@color/hint_color"
+            android:id="@+id/ticket_dump"
+            android:typeface="monospace"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="gravity"
+            android:textColor="@color/global_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/ticket_btn_issue"
+            android:text="@string/ticket_btn_issue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ticket_btn_use"
+            android:text="@string/ticket_btn_use"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_above="@id/row2">
+
+        <Button
+            android:id="@+id/ticket_btn_format"
+            android:text="@string/ticket_btn_format"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ticket_btn_test_use"
+            android:text="@string/ticket_btn_test_use"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

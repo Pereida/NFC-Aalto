@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"
+            android:text="AUTH0"
+            android:textColor="@color/global_text"
+            android:layout_margin="14dp" />
+
+        <NumberPicker
+            android:padding="@dimen/buttonpadding"
+            android:id="@+id/picker1"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp">
+        </NumberPicker>
+
+        <ImageButton
+            android:id="@+id/info_popup"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_info_popup" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_set"
+            android:padding="12dp"
+            android:layout_margin="4dp"
+            android:id="@+id/btn_auth_set" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_cancel"
+            android:padding="12dp"
+            android:layout_margin="4dp"
+            android:id="@+id/btn_auth_cancel" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

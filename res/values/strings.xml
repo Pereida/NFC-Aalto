@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--APP NAME-->
+    <string name="app_name">Auth</string>
+
+    <!--APP SECTION TITLES-->
+    <string name="title_tools">Tools</string>
+    <string name="title_ticket">Ticket</string>
+    <string name="title_keys">Keys</string>
+    <string name="title_archive">Archive</string>
+
+    <!--TOOL POPUP ITEMS-->
+    <string name="action_show_prefs">Safe mode</string>
+    <string name="action_write_test">Write to page</string>
+    <string name="action_erase_all">Erase all</string>
+    <string name="action_write_key">Write key to card</string>
+    <string name="action_auth_test">Test authentication</string>
+    <string name="action_set_auth1">Protection</string>
+    <string name="action_set_auth0">Protect from page…</string>
+    <string name="action_archive">Save data to archive</string>
+
+    <!--DIALOG STRINGS-->
+    <string name="action_cancel">"Cancel"</string>
+    <string name="action_set">"Set"</string>
+    <string name="action_erase">"Erase"</string>
+    <string name="action_write">"Write"</string>
+    <string name="btn_write_key">"Write key"</string>
+    <string name="auth1_text">"AUTH1 Protection"</string>
+    <string name="switch_auth_first">"authenticate first</string>
+
+    <!--CONTEXTUAL ACTIONBAR ITEMS-->
+    <string name="action_delete">Delete</string>
+
+    <!--ACTION BUTTON TITLE-->
+    <string name="action_show_console">Console</string>
+
+    <!--TICKET SECTION BUTTON TITLES-->
+    <string name="ticket_btn_test_use">Tap mode</string>
+    <string name="ticket_btn_format">Format</string>
+    <string name="ticket_btn_issue">Issue</string>
+    <string name="ticket_btn_use">Use</string>
+
+    <!--UNSORTED-->
+    <string name="console_btn_archive">Archive</string>
+    <string name="key_in_use">"Key in use: "</string>
+    <string name="new_key">"New key"</string>
+    <string name="save_key">"Save"</string>
+    <string name="key_save_hint">"will be saved to key list"</string>
+    <string name="new_key_hint">"16 chars or 0x with 16 digits"</string>
+    <string name="key_changed_msg">"Key changed: "</string>
+    <string name="key_changed_error">"Key change error"</string>
+    <string name="key_saved_msg">"Key saved: "</string>
+    <string name="log_saved_msg">"Log data saved"</string>
+    <string name="archive_empty_hint">"Archive is empty"</string>
+    <string name="selected_msg">"Selected: "</string>
+    <string name="share_multiple_msg">"Share .txt files to…"</string>
+    <string name="cbar_menu_title">"Menu"</string>
+    <string name="tag_tap_hint">Tap a tag</string>
+    <string name="automatic_authentication">"Automatic authentication when tag is found"</string>
+    <string name="safe_mode">"Safe mode"</string>
+    <string name="content_hint">"content"</string>
+    <string name="console_hint">"Console is empty"</string>
+
+    <!--INFO STRINGS-->
+    <string name="auth0_info">"Starting page of AUTH1 protection. Setting as 48 means no protection.\n\nAUTH0 data is written on page 42."</string>
+    <string name="auth1_info">"Set the AUTH1 value on the card. When set to 'rw', authentication is required for both reading and writing, while 'w' means only writing is restricted.\n\nAUTH1 data is written on page 43."</string>
+    <string name="write_key_info">"This function lets you change the authentication key on an Ultralight C tag. The authentication key is stored on pages 44–47, and if the pages are protected by the AUTH settings, then you must set authentication enabled before attempting to write the key.\n\nChoose the new key from the spinner list."</string>
+    <string name="new_key_info">"Type in a new authentication key. In the tools section the authentication key can be either 16 characters or digits, but not mixed for simplification.\n\nTo enter a numeral key you must start with '0x'. The key will be saved on the key list."</string>
+
+    <!--WEEKDAYS IN KEY LIST-->
+    <array name="weekdays">
+        <item name="d0">"sunday"</item>
+        <item name="d1">"monday"</item>
+        <item name="d2">"tuesday</item>
+        <item name="d3">"wednesday"</item>
+        <item name="d4">"thursday"</item>
+        <item name="d5">"friday"</item>
+        <item name="d6">"saturday"</item>
+    </array>
+    <string name="default_key">"default key"</string>
+
+    <!--NFC SETTING PROMPT STRINGS-->
+    <string name="nfc_disabled_msg">"NFC is disabled on your device."</string>
+    <string name="action_nfc_settings">"NFC settings"</string>
+
+</resources>
